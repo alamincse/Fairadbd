@@ -1,0 +1,453 @@
+/*
+Theme Name: Fairadbd
+Theme URI: http://fairadbd.com/
+Description: This is a garments company website.
+Author: AL-AMIN
+Author URI: http://facebook.com/alaminbosscseru09/
+version: 1.0
+*/
+
+body{
+	background:url(../img/dark_bg.png);
+}
+.box-shadow ( @shadow:1px -5px 14px #000000 ) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	-ms-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+
+/*-----------------------------------------
+content section
+-------------------------------------------*/
+.content{
+	background:#efefef;
+	.box-shadow();
+    border-top:5px solid #1C71A4;
+    h1.site-title{
+    	a span.logo{
+    		background:#fff;
+    	}
+    }
+
+	/*-----------------------------------------
+	Social-icon section
+	-------------------------------------------*/
+    ul.social-icon li{
+		float:left;
+	    margin: 10px 0 0 7px;
+	    -webkit-transition:padding-top .5s;
+		-moz-transition:padding-top .5s;
+		transition:padding-top .5s;
+		&:hover{
+			padding-top:10px;
+		}
+		.social-icon( @background: url(../img/facebook.png) ){
+			background: @background;
+			width: 32px;
+			height:32px;
+		}
+		a.facebook{
+			.social-icon();
+		}
+		a.twitter{
+			.social-icon( url(../img/twitter.png) );
+		}
+		a.linked{
+			.social-icon( url(../img/linked.png) );
+		}
+		a.google{
+			.social-icon( url(../img/google.png) );
+		}
+    }
+
+	/*-----------------------------------------
+	Top-nav section
+	-------------------------------------------*/
+    .top-nav{
+    	margin-left:20px;
+    	background: #364956;
+    	margin-top:20px;
+		ul{
+			li{
+		    	float:left;
+		    	a{
+		    		font-family:georgia;
+		    		color:white;
+		    		border-right:1px solid white;
+		    		padding:14px 25px 10px 10px;
+					-webkit-transition:padding-left .5s, color 2s;
+					-moz-transition:padding-left .5s, color 2s;
+					transition:padding-left .5s, color 2s;
+					&:hover{
+						padding-left: 5px;
+						color: #fff;
+						background: #1499EA;
+						font-weight:bold;
+						font-family:Ubuntu;
+					}
+					i.icon{
+		    			margin-left:-2px;
+		    			position:absolute;
+		    		}
+		    	}
+	    	}
+		}
+    }
+
+	/*-----------------------------------------
+	Slider section
+	-------------------------------------------*/
+    #slider{
+    	margin-top:-8px;
+    	img{
+    		width:960px;
+    		height:450px;
+    	}
+    }
+    .slider-nav{
+		    padding: 5px 0 5px 440px;
+		}
+    	a#next{
+    		margin-left:25px;
+    	}
+    }
+    p.welcome{
+    	font-family: Georgia;
+	    margin-left: 333px;
+	    font-weight: lighter;
+	    font-size: 25px;
+	    -webkit-text-shadow: 2px 2px 1px #3E3E3E;
+	    -moz-text-shadow: 2px 2px 1px #3E3E3E;
+	    -ms-text-shadow: 2px 2px 1px #3E3E3E;
+	    -o-text-shadow: 2px 2px 1px #3E3E3E;
+	    text-shadow: 2px 2px 1px #3E3E3E;
+    }
+    .site-news{
+    	font-weight:Ubuntu;
+    }
+
+    /*-----------------------------------------
+	Home section product show
+	-------------------------------------------*/
+	.item-show{
+		padding:3px 0px 40px 27px;	
+		.img-h-w{
+			width:280px;
+			height:212px;
+		}
+		.box{
+			.img-h-w();
+			position:relative;
+			overflow:hidden;
+			cursor:pointer;
+			-webkit-box-shadow: 1px 2px 4px 5px #898989;
+			-moz-box-shadow: 1px 2px 4px 5px #898989;
+			box-shadow: 1px 2px 4px 5px #898989;
+			img{
+				.img-h-w();
+				margin-top:-10px;
+			}
+			.caption{
+				background-color: rgba(0,0,0,0.8);
+				position: absolute;
+				color: #fff;
+				z-index: 100;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				-ms-transition: all 300ms ease-out;	
+				transition: all 300ms ease-out;
+				left: 0;
+				height: 100px;
+				display: block;
+				bottom: -100px;
+				text-align: center;
+
+				/* style h4, p & a */
+				h4,p{
+					font-family: 'Times New Roman';
+    				cursor: default;
+				}
+				a{
+					color: #FEFEFE;
+					font-weight: normal;
+					font-family: times new roman;
+					background: #39A0BE;
+					padding: 5px;
+					border-radius: 5px;
+					&:hover{
+						text-decoration:none;
+						color:#A5FAFF;
+					}
+				}
+			}
+			&:hover .caption{
+				-moz-transform: translateY(-100%);
+				-o-transform: translateY(-100%);
+				-webkit-transform: translateY(-100%);
+				transform: translateY(-100%);
+				opacity: 1;
+				width:300px;
+			}
+			p.product-item{
+				padding: 3px 0 10px 78px;
+			    background: #15181E;
+			    color: #fff;
+			    font-family: Lucida Grande;
+			    cursor: default; 
+			}
+		}
+		h3{
+			margin: 2px 0 19px 20px;
+    		font-family: 'Courier New';
+		}
+	}
+	.second-part{
+		margin: 0px 1px 0px -20px;
+	}
+
+	/*-----------------------------------------
+	Template Name: Contact
+	-------------------------------------------*/
+	#form{
+		margin-left:-65px;
+	}
+	.contact{
+		margin: 35px 0 20px 15px;
+	    font-family: times new roman;
+	    font-size: 33px;
+	    -webkit-text-shadow:2px 2px 1px #000000;
+	    -moz-text-shadow:2px 2px 1px #000000;
+	    -ms-text-shadow:2px 2px 1px #000000;
+	    -o-text-shadow:2px 2px 1px #000000;
+	    text-shadow:2px 2px 1px #000000;
+	}
+	.humen-test{
+		margin-left:18px;
+	}
+	/*-----------------------------------------
+	Template Name:About
+	-------------------------------------------*/
+	.about-fairadbd{
+		h3{
+			font-family: georgia;
+		    margin: 27px 0 0 20px;
+		}
+		p{
+			font-family:serif;
+		}
+		p::-moz-selection { color: #ccc;  background: #333; }
+ 		p::selection      { color: #ccc;  background: #333; }
+ 		p.about-info{
+ 			margin-left:20px;
+ 		}
+	}
+	.quality{
+		h3{
+			margin-left: 10px;
+		    font-family: 'Times New Roman';
+		    font-size: 20px;
+		}
+		h5{
+			margin-left:10px;
+		}
+		.service{
+			width: 267px;
+		    margin-left: 36px;
+		    height: 225px;
+		    ul.service-style li{
+		    	padding-bottom:10px;
+		    }
+		    p{
+		    	margin-left:10px;
+		    }
+		}
+	}
+
+	.gallery{
+		img{
+			width:250px;
+			height:200px;
+		}
+	}
+	/*-----------------------------------------
+	Footer section
+	-------------------------------------------*/
+    .footer{
+    	height: 350px;
+    	background:#444444;
+    	border-top:5px solid #1C71A4; 
+    	margin-top:50px;
+    	.footer-style(){
+    		color:#fff;
+    		font-family: 'Comic Sans MS';
+			border-bottom: 1px solid #fff;
+			padding-bottom:15px;
+    	}
+    	.footer-left-style(){
+    		-webkit-transition:padding-left .5s, color 2s;
+			-moz-transition:padding-left .5s, color 2s;
+			transition:padding-left .5s, color 2s;
+    	}
+    	.contact-us{
+    		.footer-style();
+    		padding-left:10px;
+    	}
+    	.info-fairadbd{
+    		margin-left:10px;
+    		margin-top:30px;
+    		.contact-item(){
+    			color: #000000;
+			    font-weight: bold;
+			    font-family: Courier New;
+			    font-size: 14px;
+			    -webkit-text-shadow: 2px 1px 1px #6E6E6E;
+			    -moz-text-shadow: 2px 1px 1px #6E6E6E;
+			    -ms-text-shadow: 2px 1px 1px #6E6E6E;
+			    -o-text-shadow: 2px 1px 1px #6E6E6E;
+			    text-shadow: 2px 1px 1px #6E6E6E;
+    		}
+    		p{
+    			color:#fff;
+    			font-family:Ubutu;
+	    		.mobile{
+	    			.contact-item();
+	    		}
+	    		.email{
+	    			.contact-item();
+	    			margin-top:-30px;
+	    		}
+	    		.contact-office{
+	    			.contact-item();
+	    			color:#65CCEA;
+	    			margin:30px 0 10px 0;
+	    			font-size:17px;
+	    		}
+    		}
+      	}
+    	.mission{
+    		.footer-style();
+    		width:190px;
+    		margin-left:10px;
+    	}
+    	ul.mission-nav{
+		    margin: 30px 0 0 20px;
+		    width: 200px;
+    		li{
+	    		color:pink;
+	    		margin-bottom:10px;
+	    		&:hover{
+	    			color:red;
+	    		}
+	    		a{
+	    			color:#fff;
+	    			font-family:Georgia;
+	    			font-size:14px;
+	    			.footer-left-style();
+
+	    			&:hover{
+	    				text-decoration:none;
+	    				padding-left:15px;
+	    				color:chocolate;
+	    			}
+	    		}
+	    	}
+    	}
+    	.more-info{
+    		width:230px;
+    		color: #FFFFFF;
+    		font-size:24px;
+		    font-family: Georgia;
+		    margin-left: 62px;
+		    border-bottom: 1px dashed #E0E0E0;
+		    padding-bottom: 14px;
+    	}
+    	ul.more-info-nav{
+    		width: 238px;
+		    margin: 26px 0 0 33px;
+    		li{
+    			list-style:none;
+    			margin-left: 35px;
+			    padding: 6px 1px 6px 0px;
+			    border-bottom: 1px dashed #6E6E6E;
+    			a{
+    				padding-left:15px;
+ 					.footer-left-style();
+ 					&:hover{
+ 						padding-left: 25px;
+					    text-decoration: none;
+					    color: lightsteelblue;
+ 					}
+    			}
+    		}
+    	}
+    	.product{
+    		.footer-style();
+    	}
+    	marquee.item-service{
+    		margin-top:30px;
+    	}
+    	ol.item-nav{
+	    	li{
+	    		color:#fff;
+	    		margin:0px 0px 10px 2px;
+	    		.footer-left-style();
+
+				&:hover{
+					padding-left:10px;
+					color:red;
+				}
+	    		a{
+	    			padding-left:5px;
+	    			color:#c9c9c9;
+	    			&:hover{
+	    				text-decoration:none;
+	    				color:#fff;
+	    			}
+	    		}
+	    	}
+	    }
+    }
+
+	/*-----------------------------------------
+	Copyright section
+	-------------------------------------------*/
+    .copyright{
+    	background:#282828;
+    	border-top:1px solid #000;
+    	border-bottom:5px solid #1C71A4;
+    	height:70px;
+    	p{
+    		color: #FFFFFF;
+			font-family: monospace;
+			line-height: 60px;
+			padding: 0px 20px 0px 13px;
+    	}
+    }
+
+	/*-----------------------------------------
+	Back to top section
+	-------------------------------------------*/
+    p.back-to-top{
+		bottom: 30px;
+		width: 80px;
+	    height: 33px;
+	    margin-left: 190px;
+	    position: fixed;
+	    background: #1B1E25;
+	    padding: 12px 15px 0px 8px;
+	    border-radius:5px;
+		a{
+    		-webkit-transition:padding-left .5s;
+			-moz-transition:padding-left .5s;
+			transition:padding-left .5s;
+			color:#fff;
+			&:hover{
+				text-decoration:none;
+				padding-left:10px;
+			}
+		}
+	}
+}

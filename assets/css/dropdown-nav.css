@@ -1,0 +1,123 @@
+/* Reset */
+.dropdown-nav,
+.dropdown-nav a,
+.dropdown-nav ul,
+.dropdown-nav li,
+.dropdown-nav div,
+.dropdown-nav form,
+.dropdown-nav input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.dropdown-nav a { text-decoration: none; }
+
+.dropdown-nav li { list-style: none; }
+
+/* Menu Container */
+.dropdown-nav {
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	margin-top:20px;
+	width: 940px;
+	height: 44px;
+	background: #364956;
+	z-index: 500;
+}
+
+/* Menu List */
+.dropdown-nav > li {
+	display: block;
+	float: left;
+}
+
+/* Menu Links */
+.dropdown-nav > li > a {
+	position: relative;
+	display: block;
+	z-index: 510;
+	padding: 0 20px;
+	line-height: 44px;
+	
+	font-family:georgia;
+	/*font-weight: bold;*/
+	font-size: 13px;
+	color: #fcfcfc;
+	border-right: 1px dashed white;
+	-webkit-transition:padding-left .5s, color 2s;
+	-moz-transition:padding-left .5s, color 2s;
+	transition:padding-left .5s, color 2s;
+}
+
+.dropdown-nav>li >a:hover{
+	padding-left: 5px;
+	color: #fff;
+	background: #4D606D;
+	font-weight:bold;
+	font-family:Ubuntu;
+	border-right: none;
+}
+
+.dropdown-nav > li:hover > a { background: #4D606D; border-right: none; }
+
+
+/* Menu Dropdown */
+.dropdown-nav > li > div {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 50px;
+	left: 0;
+
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.dropdown-nav > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+
+/* Menu Content Styles */
+.dropdown-nav .nav-column{
+	float: left;
+	margin: -6px 0 0 197px;
+	width: 45%;
+	padding: 2.5%;
+	padding-left: 30px;
+	background: #4D606D;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.dropdown-nav .nav-column h3 {
+	margin: 10px 0 30px 0px;
+	line-height: 18px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+.dropdown-nav .nav-column li{
+	margin-top: 17px;
+	border-bottom: 1px dashed white;
+	width:120px;
+}
+.dropdown-nav .nav-column li a {
+	display: block;
+	font-size: 13px;
+	color: #fff;
+	margin-top: -20px;
+	padding: 0 0 10px 21px;
+	-webkit-transition:padding-left .5s, color 2s;
+	-moz-transition:padding-left .5s, color 2s;
+	transition:padding-left .5s, color 2s;
+}
+.dropdown-nav .nav-column ul li a:hover{
+	padding-left: 35px;
+	color: yellow;
+}
